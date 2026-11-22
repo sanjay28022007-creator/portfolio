@@ -1,0 +1,49 @@
+import { USER } from "@/features/portfolio/data/user"
+
+import { DiameterDimension } from "./diameter-dimension"
+import { ProfileTaglines } from "./profile-taglines"
+import { VerifiedIcon } from "./verified-icon"
+
+export function ProfileHeader() {
+  return (
+    <div className="screen-line-top screen-line-bottom grid grid-cols-[1fr] grid-rows-[1fr_auto] overflow-y-clip border-x border-x-line after:z-1">
+      <div className="flex flex-col sm:row-span-2 sm:row-start-1">
+        <div className="screen-line-top mt-auto shrink-0 border-r border-line">
+          <div className="-mx-px my-0 flex outline-none">
+            <div className="relative z-10 size-30 rounded-full min-[24rem]:size-32 sm:size-40">
+              <img
+                className="block size-full rounded-[inherit] object-cover select-none"
+                src={USER.avatarOutline}
+                alt={`${USER.displayName} avatar`}
+              />
+              <div className="pointer-events-none absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-foreground dark:inset-ring-foreground/20" />
+
+              <DiameterDimension
+                className="-z-1 hidden lg:block"
+                diameter={160}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col">
+        <div className="z-1 mt-auto border-t border-line">
+          <div className="flex -translate-x-px items-center gap-2 pl-4">
+            <h1
+              className="-translate-y-px text-3xl/none font-medium tracking-tight"
+            >
+              {USER.displayName}
+            </h1>
+
+            <VerifiedIcon className="size-4.5 select-none" aria-hidden />
+          </div>
+
+          <ProfileTaglines className="h-12.5 border-t border-line py-1 pl-4 sm:h-9">
+            {USER.taglines}
+          </ProfileTaglines>
+        </div>
+      </div>
+    </div>
+  )
+}

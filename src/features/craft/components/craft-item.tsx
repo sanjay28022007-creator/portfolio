@@ -1,0 +1,151 @@
+import type { Route } from "next"
+import type { ImageProps } from "next/image"
+import Link from "next/link"
+import { mergeProps } from "@base-ui/react/merge-props"
+import { useRender } from "@base-ui/react/use-render"
+import { format } from "date-fns"
+
+import { cn } from "@/lib/utils"
+
+import type { Craft } from "../types"
+import { CraftGallery } from "./craft-gallery"
+import { CraftVideo } from "./craft-video"
+
+export function CraftItem({
+  craft,
+  figureNumber,
+  imageLoading = "lazy",
+  className,
+}: {
+  craft: Craft
+  figureNumber: number
+  imageLoading?: ImageProps["loading"]
+  className?: string
+}) {
+  const { media } = craft
+
+  return (
+    <figure className={cn("flex flex-col", className)}>
+      <div className="p-2">
+        {media.type === "video" ? (
+          <div className="relative rounded-xl">
+            <CraftVideo
+              className="rounded-[inherit]"
+              src={media.src}
+              poster={media.poster}
+              width={media.width}
+              height={media.height}
+            />
+            <div className="pointer-events-none absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-foreground/10" />
+          </div>
+        ) : (
+          <CraftGallery
+            images={media.type === "gallery" ? media.images : [media]}
+            label={craft.description}
+            imageLoading={imageLoading}
+          />
+        )}
+      </div>
+
+      <figcaption className="screen-line-top grid grid-cols-[--spacing(31)_1fr]">
+        <CaptionCell>
+          Fig.{figureNumber.toString().padStart(2, "0")}
+        </CaptionCell>
+        <p className="max-w-prose px-4 py-3 text-sm/5 text-pretty max-sm:row-span-2">
+          {craft.description}
+        </p>
+
+        <CaptionCell
+          className="border-t"
+          render={<time dateTime={craft.createdAt} />}
+        >
+          {format(
+            new Date(craft.createdAt),
+            isMonthOnly(craft.createdAt) ? "MMM yyyy" : "d MMM yyyy"
+          )}
+        </CaptionCell>
+        <div className="col-span-2 flex divide-line border-t border-line max-sm:flex-col max-sm:divide-y max-sm:empty:hidden sm:col-span-1">
+          {craft.registryHref && (
+            <CaptionLink
+              render={
+                <Link
+                  href={craft.registryHref as Route}
+                  className="link-underline"
+                />
+              }
+            >
+              Get the code
+            </CaptionLink>
+          )}
+
+          {craft.xPostUrl && (
+            <CaptionLink
+              render={
+                <a
+                  href={craft.xPostUrl}
+                  className="link-underline"
+                  target="_blank"
+                  rel="noopener"
+                />
+              }
+            >
+              View on X
+            </CaptionLink>
+          )}
+
+          {craft.xPostUrl && craft.pickedByBestDesignsOnX && (
+            <CaptionLink
+              render={
+                <a
+                  href={`https://bestdesignsonx.com${new URL(craft.xPostUrl).pathname}`}
+                  className="link-underline"
+                  target="_blank"
+                  rel="noopener"
+                />
+              }
+            >
+              Picked by Best Designs On X
+            </CaptionLink>
+          )}
+        </div>
+      </figcaption>
+    </figure>
+  )
+}
+
+const isMonthOnly = (date: string) => /^\d{4}-\d{2}$/.test(date)
+
+function CaptionCell({
+  className,
+  render,
+  ...props
+}: useRender.ComponentProps<"span">) {
+  return useRender({
+    defaultTagName: "span",
+    props: mergeProps<"span">(
+      {
+        className: cn(
+          "border-r border-line px-4 py-3 font-mono text-xs/5 font-medium tracking-wide whitespace-nowrap text-muted-foreground uppercase",
+          className
+        ),
+      },
+      props
+    ),
+    render,
+  })
+}
+
+function CaptionLink({
+  className,
+  ...props
+}: React.ComponentProps<typeof CaptionCell>) {
+  return (
+    <CaptionCell
+      className={cn(
+        "flex items-center justify-between gap-1.5 transition-[color,background-color] ease-out hover:bg-accent-muted hover:text-foreground max-sm:border-r-0 [&_svg]:size-3.5",
+        className
+      )}
+      {...props}
+    />
+  )
+}
