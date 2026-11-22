@@ -1,313 +1,252 @@
-<!-- # [chanhdai.com](https://chanhdai.com) -->
+# Sanjay — Personal Portfolio
 
-<p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/grid.svg?title=chanhdai.com&amp;subtitle=A+pixel-perfect+dev+portfolio+and+shadcn+registry.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523000%27+d%3D%27M9+18H3v-3h6zm12-9h-6v6h6v3h-9V6h9zM3+15H0V9h3zm21+0h-3V9h3zM9+9H3V6h6z%27%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=dark&amp;theme=zinc&amp;font=geist" /><img alt="header" src="https://shieldcn.dev/header/grid.svg?title=chanhdai.com&amp;subtitle=A+pixel-perfect+dev+portfolio+and+shadcn+registry.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523000%27+d%3D%27M9+18H3v-3h6zm12-9h-6v6h6v3h-9V6h9zM3+15H0V9h3zm21+0h-3V9h3zM9+9H3V6h6z%27%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=light&amp;theme=zinc&amp;font=geist" /></picture>
-</p>
+A pixel-perfect personal developer portfolio built with **Next.js 16**, **Tailwind CSS v4**, and **shadcn/ui**. Personalized from an open-source portfolio template to represent me — a third-year Computer Science Engineering student at MSAJCE, Chennai.
 
-<p>
-  <a href="https://github.com/ncdai/chanhdai.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/ncdai/chanhdai.com/license.svg?variant=outline&amp;font=geist" /><img alt="license" src="https://shieldcn.dev/github/ncdai/chanhdai.com/license.svg?variant=outline&amp;mode=light&amp;font=geist" /></picture></a>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://www.shieldcn.dev/github/stars/ncdai/chanhdai.com.svg?variant=outline&amp;mode=dark&amp;font=geist"><img alt="GitHub Stars" src="https://www.shieldcn.dev/github/stars/ncdai/chanhdai.com.svg?variant=outline&amp;mode=light&amp;font=geist"></picture>
-  <a href="https://github.com/ncdai/chanhdai.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/views/repo/ncdai/chanhdai.com.svg?base=8541&amp;variant=outline&amp;font=geist" /><img alt="repo views" src="https://shieldcn.dev/views/repo/ncdai/chanhdai.com.svg?base=43218&amp;variant=outline&amp;mode=light&amp;font=geist" /></picture></a>
-</p>
+---
 
-A pixel-perfect dev portfolio and shadcn registry showcasing my work as a Design Engineer.
+## 🌐 Live Site
 
-→ Live site: [chanhdai.com](https://chanhdai.com)
+> Run locally at **http://localhost:3000** after setup.
 
-[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?t=1778602757#gh-dark-mode-only)](https://chanhdai.com#gh-dark-mode-only)
-[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?t=1778602757#gh-light-mode-only)](https://chanhdai.com#gh-light-mode-only)
+---
 
-## Overview
+## 👤 About Me
 
-### Stack
+Hi, I'm **Sanjay**, a third-year B.E. Computer Science and Engineering student at **Mohamed Sathak A.J. College of Engineering (MSAJCE)**, Chennai, Tamil Nadu, India.
 
-- Next.js 16
-- Tailwind CSS v4
-- shadcn/ui
+I'm passionate about modern web development and currently learning **React** while exploring **Next.js**, **Vite**, and AI-powered development tools like Claude, Cursor, and Kiro.
 
-### Featured
+---
 
-- Clean & modern design
-- Light/Dark themes
-- vCard integration
-- SEO optimized ([JSON-LD schema](https://json-ld.org), sitemap, robots)
-- AI-ready with [/llms.txt](https://llmstxt.org)
-- Spam-protected email
-- Installable as PWA
-- Analytics with [OpenPanel](https://openpanel.dev)
+## 📄 Portfolio Sections
 
-### Content
+| Section | Description |
+|---|---|
+| **Hero** | Name, animated rotating taglines, avatar |
+| **Overview** | Location (Chennai), local IST time |
+| **Social Links** | GitHub, LinkedIn, X |
+| **About** | Personal bio — who I am and what I'm learning |
+| **Skills** | Tech stack grouped by category |
+| **Education** | MSAJCE B.E. CSE — third year |
+| **Contact** | Social links + animated signature card |
 
-Centralized document system powered by MDX:
+---
 
-- Unified content layer for blog posts and component docs
-- Category-based content organization
-- Raw `.md` endpoints for AI readability
-- Syntax highlighting with code blocks
-- Dynamic OG images for rich link previews
-- RSS feed for content distribution
+## 🛠️ Tech Stack
 
-### Registry
+### Programming Languages
+- Python
+- Java
 
-Easily build and distribute reusable components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
+### Frontend
+- HTML · CSS
+- React *(current learning focus)*
+- Next.js · Vite
+- shadcn/ui · Tailwind CSS
 
-Each entry is well-documented and includes:
+### Backend & Database
+- Node.js
+- MongoDB
 
-- Live preview & code snippets
-- Beautiful, readable code blocks
-- One-click command blocks (pnpm, npm, yarn, bun)
+### AI & Dev Tools
+- Claude · Cursor · Kiro
+- Gemini · ChatGPT
 
-## Development
+### Workflow & Version Control
+- Git · GitHub
 
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
+### UI/UX Design
+- Figma
 
-## License
+---
 
-Everything in this repository is licensed under the [MIT license](./LICENSE), with one exception: my name and my logo, which are covered by the [trademark and brand policy](./TRADEMARK.md).
+## ✨ Features
 
-So the code and the writing are yours. Fork it, copy it, quote it, translate it. Just make sure to <ins>remove all my personal information</ins> and swap the branding before publishing your website. It's awesome to see my code being useful to someone!
+- **Clean minimal design** — dark/light theme support
+- **Animated signature card** — interactive `<ApprovedBySanjay />` component with:
+  - Calligraphic SVG signature animation with glowing pen tip
+  - Auto-play on mount with replay
+  - Freehand drawing mode (mouse, touch, stylus)
+  - Canvas-based overlay with pressure sensitivity
+- **Animated taglines** — rotating hero subtitles
+- **Responsive layout** — mobile, tablet, and desktop
+- **SEO optimized** — metadata, Open Graph, JSON-LD structured data
+- **Smooth scroll navigation** — anchor-based nav links
+- **TypeScript** throughout
+- **Dark & light themes** — system preference aware
 
-## Contributors
+---
 
-<p>
-  <a href="https://github.com/ncdai/chanhdai.com/graphs/contributors"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/contributors/ncdai/chanhdai.com.svg?title=false&amp;size=48&amp;align=left&amp;mode=dark&amp;font=geist&amp;watermark=true" /><img alt="contributors" src="https://shieldcn.dev/contributors/ncdai/chanhdai.com.svg?title=false&amp;size=48&amp;align=left&amp;mode=light&amp;font=geist&amp;watermark=true" /></picture></a>
-</p>
+## 🚀 Getting Started
 
-## Sponsors
+### Prerequisites
 
-This project is proudly supported by:
+- Node.js ≥ 22 (managed via [fnm](https://github.com/Schniz/fnm))
+- pnpm 12.4.2
+- Git
 
-<table>
-  <tbody>
-    <tr>
-      <td colspan="3"><strong>Open Source Program</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://claude.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/claude-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/claude.svg"
-              alt="Claude"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://openpanel.dev/open-source?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/openpanel-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/openpanel.svg"
-              alt="OpenPanel"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://posthog.com/startups?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/posthog-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/posthog.svg"
-              alt="PostHog"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Platinum Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://www.nixtla.io?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/nixtla-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/nixtla.svg"
-              alt="Nixtla"
-            />
-          </picture>
-        </a>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Gold Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://shadcnstudio.com?utm_source=chanhdai.com&utm_medium=banner&utm_campaign=github">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnstudio-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnstudio.svg"
-              alt="shadcnstudio.com"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://shadcnspace.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnspace-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnspace.svg"
-              alt="Shadcn Space"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://reactbits.dev?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/reactbits-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/reactbits.svg"
-              alt="React Bits"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Silver Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://shadcncraft.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcncraft-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcncraft.svg"
-              alt="shadcncraft"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://www.shadcnblocks.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnblocks-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnblocks.svg"
-              alt="Shadcnblocks"
-            />
-          </picture>
-        </a>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Spark Supporters</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://uirules.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/uirules-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/uirules.svg"
-              alt="UI Rules"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://shoogle.dev?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shoogle-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shoogle.svg"
-              alt="Shoogle"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://www.fonttrio.xyz?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/fonttrio-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/fonttrio.svg"
-              alt="Fonttrio"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/AnukarOP">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/anukar-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/anukar.svg"
-              alt="Anukar"
-            />
-          </picture>
-        </a>
-      </td>
-      <td align="center"><a href="https://github.com/raksalim">Raksa Lim</a></td>
-      <td align="center"><a href="https://lndev.me?utm_source=chanhdai.com">Leonel Ngoya</a></td>
-    </tr>
-    <tr>
-      <td align="center"><a href="https://github.com/fadymondy">Fady Mondy</a></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+### Setup
 
-> Found this project useful? [Sponsor me](https://github.com/sponsors/ncdai) to help with support and maintenance.
+**1. Open PowerShell** (not CMD) and activate fnm:
 
-## Stats
+```powershell
+fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression
+```
 
-![Stats](https://repobeats.axiom.co/api/embed/583bf08fbdef57c3921d3cfda902d546df3e6ed1.svg "Repobeats analytics image")
-"# portfolio" 
-"# portfolio" 
-"# portfolio" 
-"# portfolio" 
-# portfolio
+**2. Navigate to the project:**
+
+```powershell
+cd "e:\500054\Downloads\chanhdai.com-main\chanhdai.com-main"
+```
+
+**3. Install dependencies:**
+
+```powershell
+pnpm install
+```
+
+**4. Create environment file:**
+
+```powershell
+Copy-Item .env.example .env.local
+```
+
+**5. Start the development server:**
+
+```powershell
+pnpm dev
+```
+
+Open **http://localhost:3000** in your browser.
+
+---
+
+## 📦 Available Scripts
+
+| Command | Description |
+|---|---|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm check-types` | Run TypeScript type check |
+| `pnpm lint` | Run ESLint |
+| `pnpm format:check` | Check Prettier formatting |
+| `pnpm format:write` | Auto-fix Prettier formatting |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── (app)/
+│   │   ├── page.tsx              # Home page — all portfolio sections
+│   │   └── layout.tsx            # App shell — header, footer, bottom nav
+│   └── layout.tsx                # Root layout — metadata, fonts, providers
+├── components/
+│   ├── approved-by-sanjay.tsx    # ✨ Animated signature card component
+│   ├── site-header.tsx           # Top navigation bar
+│   ├── site-footer-cad.tsx       # Footer with build info and links
+│   └── site-bottom-nav.tsx       # Mobile floating bottom nav
+├── config/
+│   ├── site.ts                   # Nav items, site info, constants
+│   └── json-ld.ts                # JSON-LD structured data config
+├── features/portfolio/
+│   ├── components/
+│   │   ├── profile-header.tsx    # Hero — name, avatar, taglines
+│   │   ├── hello.tsx             # About section
+│   │   ├── tech-stack.tsx        # Skills grid
+│   │   ├── education/            # Education timeline
+│   │   ├── contact.tsx           # ✨ Contact section with signature card
+│   │   └── overview/             # Location, time, social items
+│   └── data/
+│       ├── user.ts               # ✏️ All personal info — edit here
+│       ├── education.ts          # ✏️ Education entries
+│       ├── tech-stack.tsx        # ✏️ Tech stack items
+│       └── social-links.ts       # ✏️ Social profile links
+└── styles/
+    └── globals.css               # Tailwind CSS v4 global styles
+```
+
+> **✏️ marks files you'll edit** to update your personal content.
+
+---
+
+## ✏️ Personalizing the Content
+
+All personal data lives in a few files — no need to touch components:
+
+**Update your info** → `src/features/portfolio/data/user.ts`
+```ts
+displayName: "Sanjay"
+bio: "CS student learning to build for the web."
+address: "Chennai, Tamil Nadu, India"
+taglines: [ ... ]
+about: `...`
+```
+
+**Update education** → `src/features/portfolio/data/education.ts`
+
+**Update tech stack** → `src/features/portfolio/data/tech-stack.tsx`
+
+**Update social links** → `src/features/portfolio/data/social-links.ts`
+```ts
+github: { handle: "your-username", href: "https://github.com/your-username" }
+```
+
+---
+
+## 🔧 Environment Variables
+
+Copy `.env.example` to `.env.local` and fill in as needed:
+
+```env
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Optional — GitHub API token for star counts
+GITHUB_API_TOKEN=
+
+# Optional — OpenPanel analytics
+NEXT_PUBLIC_OPENPANEL_CLIENT_ID=
+
+# Optional — Discord feedback webhook
+DISCORD_FEEDBACK_WEBHOOK_URL=
+```
+
+Most variables are optional. The site runs fully without any API keys.
+
+---
+
+## 🏗️ Built With
+
+| Technology | Version | Purpose |
+|---|---|---|
+| [Next.js](https://nextjs.org) | 16.4.6 | React framework |
+| [React](https://react.dev) | 19.3.1 | UI library |
+| [TypeScript](https://www.typescriptlang.org) | 6.0.3 | Type safety |
+| [Tailwind CSS](https://tailwindcss.com) | v4 | Styling |
+| [shadcn/ui](https://ui.shadcn.com) | — | UI components |
+| [Lucide React](https://lucide.dev) | ^1.66.0 | Icons |
+| [Geist](https://vercel.com/font) | ^1.9.0 | Typography |
+| [Motion](https://motion.dev) | ^13.4.0 | Animations |
+| [pnpm](https://pnpm.io) | 12.4.2 | Package manager |
+
+---
+
+## 🙏 Credits
+
+This portfolio was built by personalizing the open-source portfolio by [Nguyen Chanh Dai](https://github.com/ncdai/chanhdai.com), which is licensed under the MIT License.
+
+The `<ApprovedBySanjay />` animated signature card is a custom component built for this portfolio.
+
+---
+
+## 📄 License
+
+MIT License — feel free to fork and adapt for your own portfolio.
+If you use this as a base, please swap out all personal information before publishing.
+
+---
+
+<p align="center">Made with ❤️ by Sanjay · Chennai, Tamil Nadu, India</p>
